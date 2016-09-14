@@ -1,0 +1,46 @@
+﻿<html>
+
+<script>
+function show_pic(){
+//alert('hi');
+var c1_elem = document.getElementById("c1");
+var c2_elem = document.getElementById("c2");
+var c3_elem = document.getElementById("c3");
+c1_elem.style.display='none';
+c2_elem.style.display = 'block';
+c3_elem.style.display = 'none';
+}
+function show_text(){
+var c1_elem = document.getElementById("c1");
+var c2_elem = document.getElementById("c2");
+var c3_elem = document.getElementById("c3");
+c1_elem.style.display='block';
+c2_elem.style.display = 'none';
+c3_elem.style.display = 'none';
+}
+function show_res() {
+    var c1_elem = document.getElementById("c1");
+    var c2_elem = document.getElementById("c2");
+    var c3_elem = document.getElementById("c3");
+    c1_elem.style.display = 'none';
+    c2_elem.style.display = 'none';
+    c3_elem.style.display = 'block';
+ }
+
+</script>
+
+	<body>
+	    <table width = "80%">
+    <tr >
+<td width = "50%" onclick = "show_text()" style="border: 1px solid; border-radius: 10px;" > info </td>
+<td onclick = "show_pic()" style="border: 1px solid; border-radius: 10px;"> map </td>
+<td onclick = "show_res()" style="border: 1px solid; border-radius: 10px;"> resourses </td>
+    </tr>
+
+        <tr>
+<td colspan = "3" > <div id = c2><img src = ireland.jpeg width = "90%"> </div> <div id = c1>Ирландия занимает бо́льшую часть одноимённого острова в северно-восточной части Атлантического океана и прилегающие мелкие острова. Остров Ирландия — западный из двух крупнейших Британских островов, он расположен между 6° 20'—10° 20' з. д. и 51° 25'—55° 23' с. ш. С востока он омывается Ирландским морем, а также проливами Св. Георга и Северным, с юга — Кельтским морем, а с запада и севера — открытыми водами Атлантического океана. Протяжённость с запада на восток — около 300 км, с севера на юг — около 450 км. Высшая точка — гора Каррантуил (1041 м). Общая площадь территории — около 70,2 тыс. км². Протяжённость границы с Великобританией — 360 км. </div>  <div id = c3> <a href="https://ru.wikipedia.org/wiki/%D0%98%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D0%B8%D1%8F">wikipedia </div> </td>
+        </tr>
+
+        </table>
+    </body>
+</html>
