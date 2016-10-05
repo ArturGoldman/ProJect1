@@ -9,12 +9,12 @@
     background-attachment: fixed;
     background-size: cover;
 }
- ol  {
-    background: rgba(251, 125, 0, 0.9); /* orng */
-    color: #fff; /* Цвет текста */
+ ul  {
+    background: rgba(0, 170, 238, 0.9); /* orng rgba(251, 125, 0, 0.9)*/
+    color: #fff; /* Цвет текста (#fff) */
     padding: 5px; /* Поля вокруг текста */
    }
-   ol {
+   ul {
     padding: 0; /* Убираем поля */
     margin-left: 35px; /* Отступ слева */
    }
@@ -103,9 +103,36 @@ td.menu
         c3_elem.style.display = 'none';
         c4_elem.style.display = 'block';
     }
+
+    function check() {
+
+        q1elem = document.getElementById("q1");
+    if (q1elem.checked) {
+        alert('yas');
+    }
+    else
+    {
+        alert('no');
+}
+var rarr=document.getElementsByName("q2");
+  if(rarr[0].checked){
+   alert('no');
+  }
+if (rarr[1].checked) {
+    alert('horosho');
+}
+if (rarr[2].checked) {
+    alert('no');
+}
+ q3e = document.getElementById("q3");
+ answer = q3e.value;
+ rese = document.getElementById("rese");
+ rese.innerHTML = 'вы уверенны';
+    }
 </script>
 
 	<body>
+    
     <h1> Ирландия </h1>
 	    <table width = "100%">
     <tr height = "40px">
@@ -128,7 +155,7 @@ td.menu
      <br><br>
      <p style = color:white class="fact" >    
      100 фактов об Ирландии, которые дадут краткое представление об образе жизни ирландцев:</p>
-<ol style = font-size:25px>
+<ul style = font-size:25px>
 <li>Ирландия очень маленькая страна</li>
 <li>Но ирландцы этим очень гордятся. Так же, они гордятся тем, что ирландцев или их потомков можно найти почти везде</li>
 <li>В Ирландии 4 провинции( Ольстер, Мунстер, Ленстер, Коннахт) и 26 графств. Еще 6 графств входят в состав провинции Ольстер, но являются частью Великобритании</li>
@@ -229,7 +256,7 @@ td.menu
 <li>Ирландцы свято уверены, что самым лучшим правителем Руси\России всех времен был Горбачев</li>
 <li>Если вы скажете 14 часов – вас не поймут. 14 часов по нашему, это 2 часа по ихнему.</li>
 <li>В общем, прекрасная страна)</li>
-</ol>
+</ul>
      
      </div>  
      <div id="map" ><center>
@@ -241,7 +268,21 @@ td.menu
 </iframe></center></div>  
 
 <div id = c3 style = "display:none; font-size: 50px"> <a href="https://ru.wikipedia.org/wiki/%D0%98%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D0%B8%D1%8F">Wikipedia </a></div> 
-<div id= c4 style = "display:none "> раздел находится в стадии разработки:)</div></td>
+<div id= c4 style = "display:none "> 
+    <input type = checkbox id = q1>
+        <label for = "q1">
+    Нравится тут??????????;)</label><br>
+    2+2=
+    <input type = "radio" name = "q2">3
+<input type = "radio" name = "q2">4
+    <input type = "radio" name = "q2">5<br>
+    Сколько 2+2 = 
+    <input type = "text" id = "q3"><br>
+    <input type = "button" onclick = "check()" value = "check">
+
+    
+
+    </div></td>
         
         </tr>
 
