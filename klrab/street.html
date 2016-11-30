@@ -7,6 +7,8 @@
 
 // фон
   <rect width="100%" height="80%"  fill="rgb(15, 255, 255)" />
+  <path id = "traj" stroke = "none" fill = "none" d = "M0 0 q -100 -400 -200 0"/>     
+  <path id = "traj2" stroke = "none" fill = "none" d = "M-200 0 q -100 -400 -200 0"/> 
   <image xlink:href="bridge.svg" x="150"   height="100%" width="100%"/>
   // здания
   <rect stroke = "black" stroke-width = "3" width="200" height="80%" fill = "rgb(76, 76, 76)"/> 
@@ -83,7 +85,25 @@
  <path stroke = "rgb(95, 0, 191)" stroke-width = "5" d = "M570 320 l0 70" />
  <path stroke = "rgb(95, 0, 191)" stroke-width = "5" d = "M600 320 l0 70" />
   //гопник
-  <image xlink:href="gop.svg" x = "700" y = "600" height="10%" width="10%"/>
+  <image xlink:href="gop.svg" id = "gopnik" x="700" y = "600" height="10%" width="10%"/>
+
+  <animateMotion
+xlink:href="#gopnik"
+dur="2s"
+begin = "click"
+fill = "freeze"
+id = "anim1"
+>
+<mpath xlink:href="#traj"/>
+</animateMotion>
+<animateMotion
+xlink:href="#gopnik"
+dur="2s"
+begin = "anim1.end"
+fill = "freeze"
+>
+<mpath xlink:href="#traj2"/>
+</animateMotion>
 </svg>
 
 </body>
