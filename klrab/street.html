@@ -1,7 +1,19 @@
 <html>
 <body>
 
-
+<script>
+    var i = 0;
+    function score() {
+        i = i + 1;
+        resEl = document.getElementById('res');
+        resEl.innerHTML = String(i);
+    }
+    function score1() {
+        i = i + 100;
+        resEl = document.getElementById('res');
+        resEl.innerHTML = String(i);
+    }
+</script>
 
 <svg  height="700" width="1000">
 
@@ -27,14 +39,14 @@
   <path stroke = "black" stroke-width = "3" d = "M652.5 320 l0 20 l27.5 0 l0 149 l55 0 l0-149 l27.5 0 l0 -20" fill = "none"/>
   <path stroke = "black" stroke-width = "3" d = "M630 120 l50 -100 l600 0 l-50 100" fill = "rgb(76, 76, 76)"/>
   // окошки
-  <rect width = "50" height = "50" x = "20"y = "380" fill = "rgb(170,255,255)"/>
-  <rect width = "50" height = "50" x = "110"y = "380" fill = "rgb(170,255,255)"/>
-  <rect width = "50" height = "50" x = "20"y = "280" fill = "rgb(170,255,255)"/>
-  <rect width = "50" height = "50" x = "110"y = "280" fill = "rgb(170,255,255)"/>
-  <rect width = "50" height = "50" x = "20"y = "180" fill = "rgb(170,255,255)"/>
-  <rect width = "50" height = "50" x = "110"y = "180" fill = "rgb(170,255,255)"/>
-  <rect width = "50" height = "50" x = "20"y = "80" fill = "rgb(170,255,255)"/>
-  <rect width = "50" height = "50" x = "110"y = "80" fill = "rgb(170,255,255)"/>
+  <rect id = "z1" onclick="score()" width = "50" height = "50" x = "20"y = "380" fill = "rgb(170,255,255)"/>
+  <rect id = "z2" onclick="score()" width = "50" height = "50" x = "110"y = "380" fill = "rgb(170,255,255)"/>
+  <rect id = "z3" onclick="score()" width = "50" height = "50" x = "20"y = "280" fill = "rgb(170,255,255)"/>
+  <rect id = "z4" onclick="score()" width = "50" height = "50" x = "110"y = "280" fill = "rgb(170,255,255)"/>
+  <rect id = "z5" onclick="score()" width = "50" height = "50" x = "20"y = "180" fill = "rgb(170,255,255)"/>
+  <rect id = "z6" onclick="score()" width = "50" height = "50" x = "110"y = "180" fill = "rgb(170,255,255)"/>
+  <rect id = "z7" onclick="score()" width = "50" height = "50" x = "20"y = "80" fill = "rgb(170,255,255)"/>
+  <rect id = "z8" onclick="score()" width = "50" height = "50" x = "110"y = "80" fill = "rgb(170,255,255)"/>
   <path stroke = "black" stroke-width = "3" d = "M20 380 l0 50 l50 0 l0 -50 l-50 0"fill="none"/>
   <path stroke = "black" stroke-width = "3" d = "M110 380 l0 50 l50 0 l0 -50 l-50 0"fill="none"/>
   <path stroke = "black" stroke-width = "3" d = "M20 280 l0 50 l50 0 l0 -50 l-50 0"fill="none"/>
@@ -43,28 +55,143 @@
   <path stroke = "black" stroke-width = "3" d = "M110 180 l0 50 l50 0 l0 -50 l-50 0"fill="none"/>
   <path stroke = "black" stroke-width = "3" d = "M20 80 l0 50 l50 0 l0 -50 l-50 0"fill="none"/>
   <path stroke = "black" stroke-width = "3" d = "M110 80 l0 50 l50 0 l0 -50 l-50 0"fill="none"/>
+  
+  <animate 
+           xlink:href="#z1"
+           attributeName="fill"
+           values="rgb(255,255,86);rgb(170,255,255)"
+           begin="click"
+           dur="0.5s"
+           repeatCount="1"
+           
+  />
+  <animate 
+           xlink:href="#z2"
+           attributeName="fill"
+           values="rgb(255,255,86);rgb(170,255,255)"
+           begin="click"
+           dur="0.5s"
+           repeatCount="1"
+  />
+  <animate 
+           xlink:href="#z3"
+           attributeName="fill"
+           values="rgb(255,255,86);rgb(170,255,255)"
+           begin="click"
+           dur="0.5s"
+           repeatCount="1"
+  />
+  <animate 
+           xlink:href="#z4"
+           attributeName="fill"
+           values="rgb(255,255,86);rgb(170,255,255)"
+           begin="click"
+           dur="0.5s"
+           repeatCount="1"
+  />
+  <animate 
+           xlink:href="#z5"
+           attributeName="fill"
+           values="rgb(255,255,86);rgb(170,255,255)"
+           begin="click"
+           dur="0.5s"
+           repeatCount="1"
+  />
+  <animate 
+           xlink:href="#z6"
+           attributeName="fill"
+           values="rgb(255,255,86);rgb(170,255,255)"
+           begin="click"
+           dur="0.5s"
+           repeatCount="1"
+  />
+  <animate 
+           xlink:href="#z7"
+           attributeName="fill"
+           values="rgb(255,255,86);rgb(170,255,255)"
+           begin="click"
+           dur="0.5s"
+           repeatCount="1"
+  />
+  <animate 
+           xlink:href="#z8"
+           attributeName="fill"
+           values="rgb(255,255,86);rgb(170,255,255)"
+           begin="click"
+           dur="0.5s"
+           repeatCount="1"
+  />
 
-  <rect width = "50" height = "50" x = "233"y = "380" fill = "rgb(170,255,255)"/>
-  <rect width = "50" height = "50" x = "323"y = "380" fill = "rgb(170,255,255)"/>
-  <rect width = "50" height = "50" x = "233"y = "280" fill = "rgb(170,255,255)"/>
-  <rect width = "50" height = "50" x = "323"y = "280" fill = "rgb(170,255,255)"/>
+  <rect id = "d1" onclick="score()" width = "50" height = "50" x = "233"y = "380" fill = "rgb(170,255,255)"/>
+  <rect id = "d2" onclick="score()" width = "50" height = "50" x = "323"y = "380" fill = "rgb(170,255,255)"/>
+  <rect id = "d3" onclick="score()" width = "50" height = "50" x = "233"y = "280" fill = "rgb(170,255,255)"/>
+  <rect id = "d4" onclick="score()" width = "50" height = "50" x = "323"y = "280" fill = "rgb(170,255,255)"/>
   <path stroke = "black" stroke-width = "3" d = "M233 380 l0 50 l50 0 l0 -50 l-50 0"fill="none"/>
   <path stroke = "black" stroke-width = "3" d = "M323 380 l0 50 l50 0 l0 -50 l-50 0"fill="none"/>
   <path stroke = "black" stroke-width = "3" d = "M233 280 l0 50 l50 0 l0 -50 l-50 0"fill="none"/>
   <path stroke = "black" stroke-width = "3" d = "M323 280 l0 50 l50 0 l0 -50 l-50 0"fill="none"/>
   <circle cx = "300" cy = "180" r="30" stroke="black" stroke-width="3" fill = "rgb(255,255,86)"/>
   
+  <animate 
+           xlink:href="#d1"
+           attributeName="fill"
+           values="rgb(170, 255, 86);rgb(170,255,255)"
+           begin="click"
+           dur="0.5s"
+           repeatCount="1"
+  />
+  <animate 
+           xlink:href="#d2"
+           attributeName="fill"
+           values="rgb(170, 255, 86);rgb(170,255,255)"
+           begin="click"
+           dur="0.5s"
+           repeatCount="1"
+  />
+  <animate 
+           xlink:href="#d3"
+           attributeName="fill"
+           values="rgb(170, 255, 86);rgb(170,255,255)"
+           begin="click"
+           dur="0.5s"
+           repeatCount="1"
+  />
+  <animate 
+           xlink:href="#d4"
+           attributeName="fill"
+           values="rgb(170, 255, 86);rgb(170,255,255)"
+           begin="click"
+           dur="0.5s"
+           repeatCount="1"
+  />
 
   <path stroke= "black" stroke-width = "3" d = "M1000 120 l-370 0 l0 200 l250 0 l0 350" fill = "none"/>
-  <rect width = "120" height = "350" x = "750"y = "360" fill = "rgb(170,255,255)"/>
+  <rect id = "m1" onclick="score()" width = "120" height = "350" x = "750"y = "360" fill = "rgb(170,255,255)"/>
   <path stroke= "black" stroke-width = "3" d = "M750 360 l0 129 l120 0 l0 -129 l-120 0" fill = "none"/>
   <path stroke= "black" stroke-width = "3" d = "M810 360 l0 350"/>
-  <rect width = "500" height = "150" x = "632" y = "145" fill = "rgb(170,255,255)"/>
+  <rect id = "m2" onclick="score()" width = "500" height = "150" x = "632" y = "145" fill = "rgb(170,255,255)"/>
   <path stroke= "black" stroke-width = "3" d = "M632 145 l500 0"/>
   <path stroke= "black" stroke-width = "3" d = "M632 295 l500 0"/>
   <path stroke= "black" stroke-width = "3" d="M762 145 l0 150"/>
   <path stroke= "black" stroke-width = "3" d="M892 145 l0 150"/>
   <path stroke= "black" stroke-width = "3" d="M762 145 l0 150"/>
+
+  <animate 
+           xlink:href="#m1"
+           attributeName="fill"
+           values="rgb(255,255,86);rgb(170,255,255)"
+           begin="click"
+           dur="0.5s"
+           repeatCount="1"
+  />
+  <animate 
+           xlink:href="#m2"
+           attributeName="fill"
+           values="rgb(255,255,86);rgb(170,255,255)"
+           begin="click"
+           dur="0.5s"
+           repeatCount="1"
+  />
   // дорога и лужайка
  
  <rect width="100%" height="40%" y="70%"  fill="rgb(170, 255, 86)" />
@@ -85,7 +212,7 @@
  <path stroke = "rgb(95, 0, 191)" stroke-width = "5" d = "M570 320 l0 70" />
  <path stroke = "rgb(95, 0, 191)" stroke-width = "5" d = "M600 320 l0 70" />
   //гопник
-  <image xlink:href="gop.svg" id = "gopnik" x="700" y = "600" height="10%" width="10%"/>
+  <image xlink:href="gop.svg" id = "gopnik" onclick="score1()" x="700" y = "600" height="10%" width="10%"/>
 
   <animateMotion
 xlink:href="#gopnik"
@@ -104,7 +231,12 @@ fill = "freeze"
 >
 <mpath xlink:href="#traj2"/>
 </animateMotion>
+
+
+
 </svg>
+
+<h1>Score: <span id="res"></span></h1> 
 
 </body>
 </html>
